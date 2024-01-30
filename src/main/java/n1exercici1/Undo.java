@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class Undo {
 
 	private static Undo instance;
-	private static ArrayList<String> requests = new ArrayList<>();
+	private static ArrayList<String> requests;
 	
 	private Undo() {
-		
+		requests = new ArrayList<>();
 	}
 	
 	public static Undo getInstance() {
