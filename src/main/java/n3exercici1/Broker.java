@@ -6,7 +6,11 @@ import n3exercici1.ConcreteClasses.Order;
 
 public class Broker {
 
-	ArrayList<Order> orderList = new ArrayList<>();
+	private ArrayList<Order> orderList;
+	
+	public Broker() {
+		orderList = new ArrayList<>();
+	}
 	
 	void takeOrder(Order order) {
 		orderList.add(order);
